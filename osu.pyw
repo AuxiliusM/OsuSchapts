@@ -8,6 +8,7 @@ from appJar import gui
 
 CONFIG_PATH = "./osuconfig.json"
 
+#dackel
 
 def get_user_recent(api_key, user_id):
     contents = request.urlopen(f"https://osu.ppy.sh/api/get_user_recent?k={api_key}&u={user_id}").read()
