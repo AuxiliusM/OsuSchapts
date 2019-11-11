@@ -75,6 +75,7 @@ def create_config(database_path="", excel_path="", api_key="", user_id="", start
 
 
 def add_new(recent_data, database):
+    recent_data = reversed(recent_data)
     last_ten = database[-30:]
 
     for play in recent_data:
